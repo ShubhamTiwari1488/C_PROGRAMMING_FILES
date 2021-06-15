@@ -1,3 +1,3 @@
 # C_Programming_files
 
-/*______THIS CONTAINS THE C/C++ CODES .____________________*/
+THIS CONTAINS THE C/C++ CODES.
