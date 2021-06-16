@@ -1,3 +1,5 @@
+// ATM PROBLEM FROM CODECHEF
+
 #include <stdio.h>
 
 int main() 
