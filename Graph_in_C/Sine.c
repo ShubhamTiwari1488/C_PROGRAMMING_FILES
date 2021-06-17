@@ -20,8 +20,9 @@ int main()
  {
   rad=(PI/180)*i;
   
-  y=(int)(10*sin(rad));
   y=fabs(y);
+  y=(int)(10*sin(rad));
+ 
   //printf("%lf\n",y); 
   
   if(i==90)
