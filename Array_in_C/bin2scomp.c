@@ -1,76 +1,49 @@
 
-/*_________________________CONVERTING BINARY TO 2'S COMPLEMENT______________________________________*/
+/*_________________TAKE A BINARY INPUT FROM USER AND PRINT THE 2'S COMPLEMENT___________________________*/
 
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 
-void input(char []);
-void display(char []);
-
 int main()
 {
+ char str[100];
  int i,j,len;
- char str[30];
  
- input(str);
+ printf("\nEnter a binary number\n");
+ scanf("%[^\n]s",str);
  
- for(i=0;str[i]!='\0' /*&& str[i]!='\n'&& str[i]!='\r')*/ ;i++)    
-                                                                 /*FGETS TAKES ENTER ALSO AS AN INPUT 
-                                                 HENCE THAT PARTICULAR PROBLEM WAS CREATED.*/
+ for(i=0;str[i]!='\0';i++)
  {
-  if(str[i]!='1' && str[i]!='0')
-   {     printf("\nPlease enter binary sequence and not any other one.\n");
-         exit(0);
-   }
-   
-  else
-     continue;
-  
+  if(str[i]!='0' && str[i]!='1')
+  {
+   printf("\nInvalid binary sequence entered..........the program is going to quit\n");
+   exit(0);
+  }
  }
  
  len=strlen(str);
  
- printf("\nThe length of the string that you have entered is %d\n",len);    
- for(i=len-2;i>=0;i--)
+ for(i=len-1;str[i]!='1';i--);
+ 
+ /*_i=len-1;
+ 
+ while((str[i]!='1')&&(i>=0))
  {
-  if(str[i]=='0')
-      str[i]='1';
-      
+  i=i-1;
+ }   _*/
+  
+ for(j=i-1;j>=0;j--)
+ {
+  if(str[j]=='1')
+    str[j]='0';
+    
   else
-      str[i]='0';
-      
+    str[j]='1';
  }
  
- printf("\nThe 2's complement of the binary sequence you have entered is :=\n");
+ printf("\nThe 2's complementary of the binary number is %s\n",str);
  
- display(str);
- printf("\n");
  return 0;
 }
-
-void input(char A[])
-{
- int i;
- 
- printf("\nEnter a binary sequence that you want to convert to 2's complement\n");
- 
- scanf("%[^\n]s",A);           //fgets(A,50,stdin);
- 
-}
-
-void display(char A[])
-{
- int i,len;
- len=strlen(A);
- for(i=0;i<len;i++)
- {
-  printf("%c ",A[i]);
- }
- 
- printf("\n");
- 
-}
         
-                 
-         
