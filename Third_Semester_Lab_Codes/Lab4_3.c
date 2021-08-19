@@ -149,7 +149,7 @@ void Traverse(struct node *head)
  
  temp=head;
  
- CheckList(head);
+ //CheckList(head);
  
  printf("\n=========================================================\n");
  printf("\nPrinting the data in the linked list:=\t");
@@ -184,8 +184,6 @@ struct node *DelAtBeg(struct node *head)
  
  temp=head;
  
- CheckList(head);
- 
  head=head->next;
  
  free(temp);
@@ -200,7 +198,7 @@ int Count(struct node *head)
  
  temp=head;
  
- CheckList(head);
+// CheckList(head);
  
  while(temp!=NULL)
  {
@@ -241,7 +239,7 @@ struct node *DelAtLast(struct node *head)
  
  temp=head;
  
- CheckList(head);
+ //CheckList(head);
  
  while(temp->next!=NULL) 
  {
@@ -263,7 +261,7 @@ void OddEven(struct node *head)
  
  temp=head;
  
- CheckList(head);
+ //CheckList(head);
  
  while(temp!=NULL)
  {
@@ -294,8 +292,10 @@ void CheckList(struct node *head)
   exit(0);
  }
  
+ else{
+   printf("\nThe list is NOT empty\n");
 }
-
+}
 void Prime(struct node *head)
 {
  struct node *temp;
@@ -374,4 +374,3 @@ struct node *reverse(struct node *temp)
     
     return prevnode;
 }
-
