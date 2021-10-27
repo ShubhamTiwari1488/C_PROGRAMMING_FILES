@@ -1,16 +1,14 @@
-
-// ERROR CORE SEGMENTATION FAULT
-
 /*__________________________WAP TO DETERMINE THE LENGTH OF THE CHARACTER STRING_____________________________*/
 
 #include<stdio.h>
 
 int main()
 {
- char *name,*cptr=name;
+ char *name,*cptr;
  int length;
  
  name="DELHI";
+ cptr=name;
  
  printf("%s\n",name);
  
