@@ -169,6 +169,13 @@ void reverse(int queue[N])
 void display(int queue[N])
 {
  int i;
+ 
+ if(front==-1 && rear==-1)
+ {
+   printf("\nQueue is empty\n");
+ }
+ 
+ else{
  printf("\nDisplaying the queue:=\t");
  
  for(i=front;i<=rear;i++)
@@ -176,6 +183,8 @@ void display(int queue[N])
   printf("%d\t",queue[i]);
  }
  
+ }
+
 }
 
       
