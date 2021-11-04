@@ -65,11 +65,13 @@ void display()
  
  else{
  	printf("\nDisplaying the details of queue\t");
- 	for(i=front;i<=rear;i=(i+1)%N)
+ 	for(i=front;i!=rear;i=(i+1)%N)
  	{
  	 printf("%d\t",queue[i]);
  	}
  	
+  printf("%d\n",queue[rear]);
+  
   }
   
 }
