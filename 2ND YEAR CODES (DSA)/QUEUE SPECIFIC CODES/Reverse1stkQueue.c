@@ -196,7 +196,7 @@ int Size(int queue[N])
  
  else
  {
-  for(i=front;i!=rear;i++)
+  for(i=front;i!=rear;i=(i+1)%N)
   {
    count++;
   }
