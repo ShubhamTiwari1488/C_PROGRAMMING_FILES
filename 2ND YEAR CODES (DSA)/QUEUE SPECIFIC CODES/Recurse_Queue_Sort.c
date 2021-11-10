@@ -3,8 +3,6 @@
 
 				
 #include<stdio.h>
-#include<limits.h>
-#include<stdlib.h>
 
 #define N 5
 
