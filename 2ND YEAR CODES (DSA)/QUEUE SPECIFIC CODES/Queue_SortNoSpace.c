@@ -1,5 +1,5 @@
 
-//SORTING A QUEUE USING EXTRA SPACE
+//SORTING A QUEUE USING NO EXTRA SPACE
 
 				
 #include<stdio.h>
@@ -9,12 +9,9 @@
 #define N 5
 
 int front=-1,rear=-1;
-int top=-1;
 
 void enqueue(int [],int);
 int dequeue(int []);
-void push(int [],int);
-int pop(int []);
 int minIndex(int [],int);
 void insertMinToRear(int [],int);
 void sortQueue(int []);
@@ -124,36 +121,6 @@ int dequeue(int queue[N])
   front=(front+1)%N;
   
   return temp;
- }
- 
-}
-
-void push(int stack[N],int data)
-{
- if(top==N-1)
- {
-  printf("\nStack Overflow\n");
-  return;
- }
- 
- else
- {
-  stack[++top]=data;
- }
- 
-}
-
-int pop(int stack[N])
-{
- if(top==-1)
- { 
-  printf("\nStack Underflow\n");
-  return -1;
- }
- 
- else
- {
-  return stack[top--];
  }
  
 }
