@@ -1,0 +1,24 @@
+
+Set – 0
+1.WAP to implement a doubly linked list by using singly linked.
+2.Write a C program to check whether two BST are similar or not.
+
+
+
+
+Set – 1
+1.Write a C program to perform Quick Sort for two unsorted array and display it.
+2.Given one queue data structure. WAP to implement stack using only one queue data structure.
+
+
+
+Set – 2
+1.WAP using a function to reverse a queue by using stack.
+2.Write a C program to find the smallest and largest element in BST and display their addition.
+
+
+Set – 3
+1.Write a C program to sort an unsorted data set using min heap concept.
+2.WAP to multiply two sparse matrixes.
+
+
