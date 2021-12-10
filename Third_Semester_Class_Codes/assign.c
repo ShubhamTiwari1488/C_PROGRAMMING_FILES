@@ -19,15 +19,14 @@ void inorderTraversal (struct node *);
 int getRightMin (struct node *tree);
 
  
-int
-main () 
+int main () 
 {
   
-int option, val;
+ int option, val;
   
-struct node *ptr;
+ struct node *ptr;
   do
-    {
+  {
       printf ("\n *MAIN MENU*\n");
       
 printf ("\n 1. Insert Element");
@@ -45,10 +44,10 @@ scanf ("%d", &option);
       
 switch (option)
 	
-	{
+{
 	
 case 1:
-	  printf ("\n Enter the value of the new node : ");
+printf ("\n Enter the value of the new node : ");
 	  
 scanf ("%d", &val);
 	  
