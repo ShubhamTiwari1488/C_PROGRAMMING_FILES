@@ -1,7 +1,7 @@
 
 #include<stdio.h>
 
-#define SWAP(x,y)(x ^=y ^=x)
+#define SWAP(x,y)(x ^=y ^=x ^=y)
 
 int main()
 {
