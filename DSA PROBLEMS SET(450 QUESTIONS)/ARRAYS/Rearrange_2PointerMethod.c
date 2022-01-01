@@ -57,7 +57,7 @@ int main()
     
     int i;
     
-    rearrange(arr, 9);
+    Rearrange(arr, 9);
     
     printf("\nAfter rearrangement we get ");
     
