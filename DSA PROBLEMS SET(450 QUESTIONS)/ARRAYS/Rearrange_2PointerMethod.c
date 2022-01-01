@@ -16,6 +16,7 @@ and simultaneously increment and decrement the left and right pointers.
                                                                                             ________________________________*/
 
 
+/*    This is an in-place rearranging algorithm for arranging the positive and negative numbers where the order of elements is not maintained.  */
 
 #include<stdio.h>
 
