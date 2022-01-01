@@ -1,6 +1,16 @@
 
 // FINDING LARGEST CONTIGUOUS SUBARRAY SUM ( HERE WE USE KADANE'S ALGORITHM).
 
+/*____________
+     
+     Kadane’s algorithm is an iterative dynamic programming algorithm in which we search for a maximum sum contiguous subarray within a one-dimensional numeric array.
+     
+     Time Complexity: O(N)
+     
+     Space Complexity: O(1)
+     
+                                                    _____________________________*/
+
 #include<stdio.h>
 #include<limits.h>
 
