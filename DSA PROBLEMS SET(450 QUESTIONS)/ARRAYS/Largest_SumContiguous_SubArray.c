@@ -16,26 +16,24 @@ void LargestContiguous(int arr[],int n)
  
  for(i=0;i<n;i++)
  {  
-  for(j=n-1;j>=i;j--)
+  sum=0;
+  
+  for(j=i;j<=n-1;j++)
   {  
-   sum=0;
-    
-   for(k=i;k<=j;k++)
-   {
-    sum+=arr[k];
-   }
+   sum+=arr[j];
    
    if(max<sum)
-    {
-     max=sum;
+   {
+    max=sum;
     
-     LR=i;
-     UR=j;
-    }
+    LR=i;
+    
+    UR=j;
+   } 
   
-  }//End of the loop
-  
- } //End of the outermost loop
+  } //End of the inner loop  
+   
+ } //End of the outer loop
  
  printf("\nThe Contiguous Sub Array that has largest sum is :\t ");
  
