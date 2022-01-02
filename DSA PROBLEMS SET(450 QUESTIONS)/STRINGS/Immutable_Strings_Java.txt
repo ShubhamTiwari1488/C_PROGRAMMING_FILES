@@ -1,0 +1,35 @@
+WHY STRINGS IN JAVA ARE IMMUTABLE?
+
+As Java uses the concept of String literal. Suppose there are 5 reference variables, all refer to one object "Sachin".
+If one reference variable changes the value of the object, it will be affected by all the reference variables. That is why String objects are IMMUTABLE in JAVA.
+
+Below are the features and advantages of Immutable Class :=
+
+1. ClassLoader:
+  A ClassLoader in Java uses a String object as an argument. Consider, if the String object is modifiable, the value might be changed and 
+  the class that is supposed to be loaded might be different.
+
+  To avoid this kind of misinterpretation, String is immutable.
+  
+2.Heap Space:
+  The immutability of String helps to minimize the usage in the heap memory.
+  When we try to declare a new String object, the JVM checks whether the value already exists in the String pool or not. 
+  If it exists, the same value is assigned to the new object. This feature allows Java to use the heap space efficiently.
+  
+3.String Pool Requirement
+    String pool is a specific storage area for string objects. If a string object is created and that string already exists, then,
+    instead of creating a new object on the heap, the reference of the same object is returned. 
+    If string is mutable, then changing one reference will change the value for all the string objects.
+    
+4.Caching KEY
+   Since a string object is immutable, its hashcode is cached at the time of creation so that it can be used multiple times without calculation. 
+   This immutability feature makes it an appropriate choice for a candidate key for HashMaps.
+   
+5.Security
+   Strings are widely used as parameters in network connections, file-openings, etc. 
+   If a string is mutable, then a connection or file would be changed which would lead to a serious security threat.
+   
+6.Thread-safe
+   These immutable string objects are thread-safe as well. 
+   Since these objects cannot be changed or modified, they can be shared between threads which eliminates the need for synchronization.
+
