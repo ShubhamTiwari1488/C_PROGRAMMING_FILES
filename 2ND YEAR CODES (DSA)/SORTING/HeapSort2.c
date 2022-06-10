@@ -60,7 +60,7 @@ void heapSort(int arr[],int n)
  {
   swap(&arr[0],&arr[i]);
   
-  heapify(arr,i,0); //Again heapify so that the root node is always largest
+  heapify(arr,i,0); //Again heapify so that the root node is always smallest
  } 
 }
 
